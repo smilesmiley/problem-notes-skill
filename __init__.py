@@ -9,7 +9,7 @@ class ProblemNotes(MycroftSkill):
         MycroftSkill.__init__(self)
         self.questions = {1: "What problem occured to you?",
                           2: "When exactly did the problem occur?",
-                          3: "Do you want to describe it further? Or do you want to note down semthing else?"
+                          3: "Do you want to describe it further? Or do you want to note down something else?"
                           }
 
     @intent_file_handler('notes.problem.intent')
