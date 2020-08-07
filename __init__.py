@@ -1,5 +1,8 @@
 from mycroft import MycroftSkill, intent_file_handler
-
+from datetime import datetime
+import json
+import os
+import time
 
 class ProblemNotes(MycroftSkill):
     def __init__(self):
@@ -12,7 +15,7 @@ class ProblemNotes(MycroftSkill):
     @intent_file_handler('notes.problem.intent')
     def handle_notes_problem(self, message):
         self.speak_dialog('notes.problem')
-        time.sleept(1)
+        time.sleep(1)
         self._ask_all_questions()
 
     def _ask_user(self, number,question, timestamp):
