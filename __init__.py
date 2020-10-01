@@ -7,7 +7,7 @@ import time
 class ProblemNotes(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        self.questions = {1: "What problem occured to you?",
+        self.questions = {1: "What problem occurred to you?",
                           2: "When exactly did the problem occur?",
                           3: "Do you want to describe it further? Or do you want to note down something else?"
                           }
